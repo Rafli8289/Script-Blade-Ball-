@@ -1,0 +1,67 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Saitama Hub : XymmxZ", HidePremium = false, SaveConfig = true, ConfigFolder = "Blade Ball"})
+
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Main"
+})
+OrionLib:MakeNotification({
+	Name = "halo jawir",
+	Content = "script buatan XymmxZ",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+Tab:AddToggle({
+	Name = "Auto Parry V1",
+	Default = false,
+	Callback = function(Value)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/Circle"))()
+	end    
+})
+Tab:AddToggle({
+	Name = "Auto Parry V2 (Hosvile)",
+	Default = false,
+	Callback = function(Value)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V2.0.0",true))()
+	end    
+})
+
+
+local Section = Tab:AddSection({
+	Name = "Auto Detect Dan lain lain"
+})
+Tab:AddButton({
+	Name = "Manual Spam",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/ForYourHead/R4mpageManualSpam/main/R4mpageV2"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Hold Block To Spam",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/DonGabrielle/HoldToSpamV4/main/Main"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Auto Detect",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/DonGabrielle/AutoDetectV4/main/MainBalls"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Fps Booster",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/DonGabrielle/Fps-Booster-V4/main/Main"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Auto Spam",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/sirapobsriumang/Auto-Spam-Parry/main/Bladeballnew"))()
+  	end    
+})
